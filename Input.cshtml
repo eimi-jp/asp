@@ -1,0 +1,49 @@
+﻿@model Tx1.Models.Sanpham
+
+@{
+    ViewBag.Title = "Input";
+}
+<h2>Nhập sản phẩm</h2>
+<form action="/Sanpham/Output" method="post">
+    <table>
+        <tr>
+            <td>mã sản phẩm</td>
+            <td>
+                <input type="text"name="masp"/>
+            </td>
+        </tr>
+        <tr>
+            <td>hãng sản xuất</td>
+            <td>
+                <div>
+                    <input type="radio" name="hangsx" value="Apple"/>Apple
+                    <input type="radio"name="hangsx" value="Xiaomi"/>Xiaomi
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>tên sản phẩm</td>
+            <td>
+                <input type="text" name="tensp"/>
+            </td>
+        </tr>
+        <tr>
+
+            <td>số lượng</td>
+            <td>
+                <input type="number" name="soluong"/>
+            </td>
+        </tr>
+        <tr>
+            <td>giá tiền</td>
+            <td>
+                <input type="number" name="giatien"/>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <button type="submit">OK</button>
+            </td>
+        </tr>
+    </table>
+</form>
